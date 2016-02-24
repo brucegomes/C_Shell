@@ -1,0 +1,7 @@
+HISTCOUNT=90
+HISTFILECOUNT=800
+Alias1
+Alias2
+...
+AliasN
+PATH=$PATH:/data/myprogs

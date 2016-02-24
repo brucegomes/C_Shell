@@ -1,0 +1,12 @@
+CC=gcc
+
+mssh:cscd340hw8.c cscd340hw8.h ./utils/fileUtils.c ./utils/fileUtils.h ./myDir/myDir.c ./myDir/myDir.h ./history/history.c ./history/history.h ./tokenize/makeArgs.c ./tokenize/makeArgs.h ./utils/myUtils.c ./utils/myUtils.h ./process/process.c ./process/process.h ./pipes/pipes.c ./pipes/pipes.h ./linkedlist/linkedList.c ./linkedlist/linkedList.h ./linkedlist/listUtils.c ./linkedlist/listUtils.h ./myDir/myDir.c ./myDir/myDir.h
+	gcc -g -o mssh cscd340hw8.c ./utils/fileUtils.c ./myDir/myDir.c ./history/history.c ./tokenize/makeArgs.c ./utils/myUtils.c ./process/process.c ./pipes/pipes.c ./linkedlist/linkedList.c ./linkedlist/listUtils.c 
+
+clean:
+	rm ./pipes/pipes.o	
+	rm ./utils/myUtils.o
+	rm ./process/process.o
+	rm ./tokenize/makeArgs.o
+	rm linkedlist/*.o
+	rm history/*.o
